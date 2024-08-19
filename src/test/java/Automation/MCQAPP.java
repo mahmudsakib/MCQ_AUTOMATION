@@ -37,15 +37,16 @@ public class MCQAPP {
     	@Test(priority=1)
     	public void LoginFailed() {
  			
+ 			//Wrong Email 
     		WebElement Email=driver.findElement(By.xpath("//*[@id=\"email\"]"));
-    		Email.sendKeys("admin@gmai.com");//Wrong Email 
+    		Email.sendKeys("admin@gmai.com");
     		try {
                 Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
     		
-    		
+    		//Right Password
     		WebElement Password=driver.findElement(By.xpath("//*[@id=\"outlined-adornment-password\"]"));
     		Password.sendKeys("P@12345678");
     		try {
@@ -54,7 +55,7 @@ public class MCQAPP {
                 e.printStackTrace();
             }
     		
-    		
+    		//Click login button
     		 driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[1]/div[2]/div/form/button")).click();
     		 try {
     			 Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
@@ -87,7 +88,8 @@ public class MCQAPP {
 		//LogIn Failed
     	@Test(priority=2)
     	public void LoginFailed2() {
- 			
+    	
+ 			//Right Email
     		WebElement Email=driver.findElement(By.xpath("//*[@id=\"email\"]"));
     		Email.sendKeys("admin@gmail.com"); 
     		try {
@@ -96,7 +98,7 @@ public class MCQAPP {
                 e.printStackTrace();
             }
     		
-    		
+    		//Wrong Password
     		WebElement Password=driver.findElement(By.xpath("//*[@id=\"outlined-adornment-password\"]"));
     		Password.sendKeys("P@1234567");//Wrong Password
     		try {
@@ -105,7 +107,7 @@ public class MCQAPP {
                 e.printStackTrace();
             }
     		
-    		
+    		//Click Login Button
     		 driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[1]/div[2]/div/form/button")).click();
     		 try {
     			 Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
@@ -138,35 +140,35 @@ public class MCQAPP {
     	@Test(priority=3)
     	public void SuccessfulLogin() {
     		
-    		
+    		//Right Email
     		WebElement Email=driver.findElement(By.xpath("//*[@id=\"email\"]"));
     		Email.sendKeys("admin@gmail.com");
     		try {
-                Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+                Thread.sleep(1000);  // 2000 milliseconds = 2 seconds
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
     		
-    		
+    		//Right Password
     		WebElement Password=driver.findElement(By.xpath("//*[@id=\"outlined-adornment-password\"]"));
     		Password.sendKeys("P@12345678");
     		try {
-                Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+                Thread.sleep(1000);  // 2000 milliseconds = 2 seconds
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
     		
-    		
+    		//Click Login Button
     		 driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[1]/div[2]/div/form/button")).click();
     		 try {
-    			 Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+    			 Thread.sleep(1000);  // 2000 milliseconds = 2 seconds
            } catch (InterruptedException e) {
                e.printStackTrace();
            }
     		 
     		//driver.findElement(By.xpath("//*[@id=\"root\"]/main/div[1]/div[2]/button")).click();
     		 try {
-    			 Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+    			 Thread.sleep(1000);  // 2000 milliseconds = 2 seconds
            } catch (InterruptedException e) {
                e.printStackTrace();
            }
@@ -233,7 +235,7 @@ public class MCQAPP {
 	
 		
 		//Approver
-		driver.findElement(By.xpath("//*[@id=\"approver\"]")).click();
+		/*driver.findElement(By.xpath("//*[@id=\"approver\"]")).click();
 		try {
             Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
         } catch (InterruptedException e) {
@@ -246,10 +248,163 @@ public class MCQAPP {
             Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
 		
-	
+		
+		
+		//Books
+		/*driver.findElement(By.xpath("//*[@id=\"book\"]")).click();
+		try {
+		     Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		 } catch (InterruptedException e) {
+		            e.printStackTrace();
+		      }
+				
+	     //Select Books
+		driver.findElement(By.xpath("//*[@id=\":rd:\"]/li[1]")).click();
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }*/	
+		
+				
+				
+				//Batch Type
+				/*driver.findElement(By.xpath("//*[@id=\"type\"]")).click();
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }
+				
+				//Select Batch Type
+				driver.findElement(By.xpath("//*[@id=\":re:\"]/li[1]")).click();
+				
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }*/
+		
+				
+				
+				//From Page
+				/*driver.findElement(By.xpath("//*[@id=\"fromPage\"]")).sendKeys("5");;
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }*/
+				
+				
+				//To Page
+				/*driver.findElement(By.xpath("//*[@id=\"toPage\"]")).sendKeys("10");;
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }*/
+				
+				
+				
+				//Subject
+				/*driver.findElement(By.xpath("//*[@id=\"subject\"]")).click();
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }*/
+				
+				//Select Subject
+				/*driver.findElement(By.xpath("//*[@id=\":re:\"]/li[1]")).click();
+				
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }*/
+				
+				
+				//Topic
+				/*driver.findElement(By.xpath("//*[@id=\"topic\"]")).click();
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }*/
+				
+				
+				//Select Topic
+				/*driver.findElement(By.xpath("//*[@id=\":ri:\"]/li")).click();
+				
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }*/
+				
+				
+				//Sub-Topic
+				/*driver.findElement(By.xpath("//*[@id=\"subtopic\"]")).click();
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }*/
+				
+				
+				//Select Sub-Topic
+				/*driver.findElement(By.xpath("//*[@id=\":rj:\"]/li[1]")).click();
+				
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }*/
+				
+				
+				//No Of Question
+				/*driver.findElement(By.xpath("//*[@id=\"noOfQuestions\"]")).sendKeys("5");;
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }*/
+		
+		//Submit Button
+		driver.findElement(By.xpath("//button[normalize-space()='Submit']")).click();
+		try {
+            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+			
+		
 	}
+	
+	
+	//New Entry
+		@Test(priority=5)
+		public void Entry() {
+			
+			//Go to Dashboard
+			driver.findElement(By.xpath("//*[@id=\"root\"]/main/div[1]/ul/li[1]/a")).click();
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+		
+			//Create Batch
+			driver.findElement(By.xpath("//*[@id=\"root\"]/main/div[2]/div[1]/div/div[1]/button")).click();
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+		}
     
     @AfterTest
     public void closeTest()

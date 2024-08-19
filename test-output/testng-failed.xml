@@ -5,7 +5,6 @@
     <classes>
       <class name="Automation.MCQAPP">
         <methods>
-          <include name="SuccessfulLogin"/>
           <include name="setUp"/>
           <include name="closeTest"/>
           <include name="Batch"/>
