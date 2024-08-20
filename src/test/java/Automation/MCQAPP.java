@@ -216,7 +216,7 @@ public class MCQAPP {
         }
 		
 		//Assignee
-		/*driver.findElement(By.xpath("//*[@id=\"assignee\"]")).click();
+		driver.findElement(By.xpath("//*[@id=\"assignee\"]")).click();
 		try {
             Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
         } catch (InterruptedException e) {
@@ -224,18 +224,18 @@ public class MCQAPP {
         }
 		
 		//Select Assignee
-		driver.findElement(By.xpath("//*[@id=\":r1:\"]/li[1]")).click();
+		driver.findElement(By.xpath("(//li[normalize-space()='MR Admin'])[1]")).click();
 		
 		try {
             Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }*/
+        }
 		
 	
 		
 		//Approver
-		/*driver.findElement(By.xpath("//*[@id=\"approver\"]")).click();
+		driver.findElement(By.xpath("//*[@id=\"approver\"]")).click();
 		try {
             Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
         } catch (InterruptedException e) {
@@ -243,17 +243,17 @@ public class MCQAPP {
         }
 		
 		//Select Approver
-		driver.findElement(By.xpath("//*[@id=\":rc:\"]/li")).click();
+		driver.findElement(By.xpath("(//li[@role='option'])[1]")).click();
 		try {
             Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }*/
+        }
 		
 		
 		
 		//Books
-		/*driver.findElement(By.xpath("//*[@id=\"book\"]")).click();
+		driver.findElement(By.xpath("//*[@id=\"book\"]")).click();
 		try {
 		     Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		 } catch (InterruptedException e) {
@@ -261,17 +261,17 @@ public class MCQAPP {
 		      }
 				
 	     //Select Books
-		driver.findElement(By.xpath("//*[@id=\":rd:\"]/li[1]")).click();
+		driver.findElement(By.xpath("(//li[contains(text(),'BCSa')])[1]")).click();
 				try {
 		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		        } catch (InterruptedException e) {
 		            e.printStackTrace();
-		        }*/	
+		        }
 		
 				
 				
 				//Batch Type
-				/*driver.findElement(By.xpath("//*[@id=\"type\"]")).click();
+				driver.findElement(By.xpath("//*[@id=\"type\"]")).click();
 				try {
 		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		        } catch (InterruptedException e) {
@@ -279,98 +279,97 @@ public class MCQAPP {
 		        }
 				
 				//Select Batch Type
-				driver.findElement(By.xpath("//*[@id=\":re:\"]/li[1]")).click();
+				driver.findElement(By.xpath("(//li[normalize-space()='TEXT'])[1]")).click();
 				
 				try {
 		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		        } catch (InterruptedException e) {
 		            e.printStackTrace();
-		        }*/
+		        }
 		
 				
 				
 				//From Page
-				/*driver.findElement(By.xpath("//*[@id=\"fromPage\"]")).sendKeys("5");;
+				driver.findElement(By.xpath("//*[@id=\"fromPage\"]")).sendKeys("1");;
 				try {
 		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		        } catch (InterruptedException e) {
 		            e.printStackTrace();
-		        }*/
+		        }
 				
 				
 				//To Page
-				/*driver.findElement(By.xpath("//*[@id=\"toPage\"]")).sendKeys("10");;
+				driver.findElement(By.xpath("//*[@id=\"toPage\"]")).sendKeys("2");;
 				try {
 		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		        } catch (InterruptedException e) {
 		            e.printStackTrace();
-		        }*/
+		        }
 				
 				
 				
 				//Subject
-				/*driver.findElement(By.xpath("//*[@id=\"subject\"]")).click();
+				driver.findElement(By.xpath("//*[@id=\"subject\"]")).click();
 				try {
 		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		        } catch (InterruptedException e) {
 		            e.printStackTrace();
-		        }*/
+		        }
 				
 				//Select Subject
-				/*driver.findElement(By.xpath("//*[@id=\":re:\"]/li[1]")).click();
-				
-				try {
-		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
-		        } catch (InterruptedException e) {
-		            e.printStackTrace();
-		        }*/
+				// Locate the <li> element using XPath
+				WebElement listItem = driver.findElement(By.xpath("//li[@data-value='6']\r\n"+ ""));
+
+				// Perform actions on the element
+				listItem.click();
+
 				
 				
 				//Topic
-				/*driver.findElement(By.xpath("//*[@id=\"topic\"]")).click();
+				driver.findElement(By.xpath("//*[@id=\"topic\"]")).click();
 				try {
 		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		        } catch (InterruptedException e) {
 		            e.printStackTrace();
-		        }*/
+		        }
 				
 				
 				//Select Topic
-				/*driver.findElement(By.xpath("//*[@id=\":ri:\"]/li")).click();
+				driver.findElement(By.xpath("(//li[@role='option'])[1]")).click();
 				
 				try {
 		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		        } catch (InterruptedException e) {
 		            e.printStackTrace();
-		        }*/
+		        }
 				
 				
 				//Sub-Topic
-				/*driver.findElement(By.xpath("//*[@id=\"subtopic\"]")).click();
+				driver.findElement(By.xpath("//*[@id=\"subtopic\"]")).click();
 				try {
 		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		        } catch (InterruptedException e) {
 		            e.printStackTrace();
-		        }*/
+		        }
 				
 				
 				//Select Sub-Topic
-				/*driver.findElement(By.xpath("//*[@id=\":rj:\"]/li[1]")).click();
+				driver.findElement(By.xpath("(//li[normalize-space()='Run'])[1]")).click();
 				
 				try {
 		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		        } catch (InterruptedException e) {
 		            e.printStackTrace();
-		        }*/
+		        }
 				
 				
 				//No Of Question
-				/*driver.findElement(By.xpath("//*[@id=\"noOfQuestions\"]")).sendKeys("5");;
+				driver.findElement(By.xpath("//*[@id=\"noOfQuestions\"]")).sendKeys("2");;
 				try {
 		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 		        } catch (InterruptedException e) {
 		            e.printStackTrace();
-		        }*/
+		        }
 		
 		//Submit Button
 		driver.findElement(By.xpath("//button[normalize-space()='Submit']")).click();
@@ -395,17 +394,400 @@ public class MCQAPP {
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-		
-			//Create Batch
-			driver.findElement(By.xpath("//*[@id=\"root\"]/main/div[2]/div[1]/div/div[1]/button")).click();
+			
+			//New Entry
+			driver.findElement(By.xpath("(//*[name()='path'])[3]")).click();
+			
 			try {
 	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
 			
+			//Question Entry 1
+			driver.findElement(By.xpath("(//textarea[@name='questions.0.data'])[1]")).sendKeys("What is your name");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+
+			//Answer Entry 1
+			driver.findElement(By.xpath("(//textarea[@name='options.option1.option.0.data'])[1]")).sendKeys("Shakib");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			//Answer Entry 2
+			driver.findElement(By.xpath("(//textarea[@name='options.option2.option.0.data'])[1]")).sendKeys("Sakib");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			//Correct Answer
+            driver.findElement(By.xpath("(//button[contains(text(),'Is Answer')])[2]")).click();
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			//Answer Entry 3
+			driver.findElement(By.xpath("(//textarea[@name='options.option3.option.0.data'])[1]")).sendKeys("Sakibe");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			//Answer Entry 4
+			driver.findElement(By.xpath("(//textarea[@name='options.option4.option.0.data'])[1]")).sendKeys("Shakive");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			
+			//Explanations Entry 
+			driver.findElement(By.xpath("(//textarea[@name='explanations.0.data'])[1]")).sendKeys("Shakive");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			//Click Next
+			driver.findElement(By.xpath("(//button[normalize-space()='Next'])[1]")).click();
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			
+			
+			
+			//Question Entry 2
+			driver.findElement(By.xpath("(//textarea[@name='questions.0.data'])[1]")).sendKeys("How old are you");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+
+			//Answer Entry 1
+			driver.findElement(By.xpath("(//textarea[@name='options.option1.option.0.data'])[1]")).sendKeys("20");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			//Answer Entry 2
+			driver.findElement(By.xpath("(//textarea[@name='options.option2.option.0.data'])[1]")).sendKeys("21");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+
+			
+			//Answer Entry 3
+			driver.findElement(By.xpath("(//textarea[@name='options.option3.option.0.data'])[1]")).sendKeys("22");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			//Answer Entry 4
+			driver.findElement(By.xpath("(//textarea[@name='options.option4.option.0.data'])[1]")).sendKeys("23");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			//Correct Answer
+            driver.findElement(By.xpath("(//button[contains(text(),'Is Answer')])[4]")).click();
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			
+			//Explanations Entry 
+			driver.findElement(By.xpath("(//textarea[@name='explanations.0.data'])[1]")).sendKeys("Birth date 2000");
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			//Submit Question
+			driver.findElement(By.xpath("(//button[normalize-space()='Submit Question'])[1]")).click();
+			
+			try {
+	            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+			
+			
 		}
     
+		
+		
+		//Assign Revisison
+				@Test(priority=6)
+				public void AssignRevision() {
+					
+					//Go to Revision page
+					driver.findElement(By.xpath("(//a[normalize-space()='Revision'])[1]")).click();
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					//Update Pending Reviews
+					driver.findElement(By.xpath("(//button[normalize-space()='Update Pending Reviews'])[1]")).click();
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					
+					//Select Batch
+					driver.findElement(By.xpath("(//div[@id='batch'])[1]")).click();
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					
+					//Confirmed Batch
+					driver.findElement(By.xpath("(//li[@role='option'])[1]")).click();
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					
+					
+					//Assignee
+					driver.findElement(By.xpath("(//div[@id='assignee'])[1]")).click();
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					//Select Assignee
+					driver.findElement(By.xpath("(//li[normalize-space()='MR Admin'])[1]")).click();
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					
+					
+					//Approver
+					driver.findElement(By.xpath("(//div[@id='approver'])[1]")).click();
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					//Select Approver
+					driver.findElement(By.xpath("(//li[@role='option'])[1]")).click();
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					
+					//Submit
+					driver.findElement(By.xpath("(//button[normalize-space()='Submit'])[1]")).click();
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					
+					
+				}
+				
+				@Test(priority=7)
+				public void Review() {
+					//Go to Dashboard
+					driver.findElement(By.xpath("(//a[normalize-space()='Dashboard'])[1]")).click();
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					//New Review
+					driver.findElement(By.xpath("(//*[name()='svg'][contains(@class,'MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06')])[1]")).click();
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					
+					//Review Question Entry 1
+					WebElement inputField=driver.findElement(By.xpath("(//textarea[@name='questions.0.data'])[1]"));
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+
+					// Clear the existing text in the input field
+					inputField.clear();
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					// Enter new data into the input field
+					inputField.sendKeys("What is your name?");
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					
+					
+					//Review Question Entry 2
+					WebElement correct=driver.findElement(By.xpath("(//textarea[@name='options.option2.option.0.data'])[1]"));
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+
+					// Clear the existing text in the input field
+					correct.clear();
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					// Enter new data into the input field
+					correct.sendKeys("Sakib Mahmud");
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					
+					//Click Next
+					driver.findElement(By.xpath("(//button[normalize-space()='Next'])[1]")).click();
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					
+					
+					//Review Answer Entry 3
+					WebElement year=driver.findElement(By.xpath("(//textarea[@name='options.option3.option.0.data'])[1]"));
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					
+					// Clear the existing text in the input field
+					year.clear();
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					// Enter new data into the input field
+					year.sendKeys("24");
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+					//Correct Answer
+		            driver.findElement(By.xpath("(//button[contains(text(),'Is Answer')])[3]")).click();
+					
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+				
+					
+					//Submit Question
+					driver.findElement(By.xpath("(//button[normalize-space()='Submit Review'])[1]")).click();
+					try {
+			            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+			        } catch (InterruptedException e) {
+			            e.printStackTrace();
+			        }
+					
+				}
+				
+								
+				
+				
     @AfterTest
     public void closeTest()
     {
