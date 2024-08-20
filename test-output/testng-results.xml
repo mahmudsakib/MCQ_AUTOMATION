@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-20T16:01:15 BDT" name="Default suite" finished-at="2024-08-20T16:03:29 BDT" duration-ms="133840">
+  <suite started-at="2024-08-21T00:54:22 BDT" name="Default suite" finished-at="2024-08-21T00:56:45 BDT" duration-ms="143298">
     <groups>
     </groups>
-    <test started-at="2024-08-20T16:01:15 BDT" name="Default test" finished-at="2024-08-20T16:03:29 BDT" duration-ms="133840">
+    <test started-at="2024-08-21T00:54:22 BDT" name="Default test" finished-at="2024-08-21T00:56:45 BDT" duration-ms="143298">
       <class name="Automation.MCQAPP">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Automation.MCQAPP@5c7bfdc1]" started-at="2024-08-20T16:01:15 BDT" name="setUp" finished-at="2024-08-20T16:01:19 BDT" duration-ms="4413" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Automation.MCQAPP@5276d6ee]" started-at="2024-08-21T00:54:22 BDT" name="setUp" finished-at="2024-08-21T00:54:25 BDT" duration-ms="3534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SuccessfulLogin()[pri:3, instance:Automation.MCQAPP@5c7bfdc1]" started-at="2024-08-20T16:01:19 BDT" name="SuccessfulLogin" finished-at="2024-08-20T16:01:24 BDT" duration-ms="4488" status="PASS">
+        <test-method signature="SuccessfulLogin()[pri:3, instance:Automation.MCQAPP@5276d6ee]" started-at="2024-08-21T00:54:25 BDT" name="SuccessfulLogin" finished-at="2024-08-21T00:54:30 BDT" duration-ms="4433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessfulLogin -->
-        <test-method signature="Batch()[pri:4, instance:Automation.MCQAPP@5c7bfdc1]" started-at="2024-08-20T16:01:24 BDT" name="Batch" finished-at="2024-08-20T16:02:04 BDT" duration-ms="39942" status="PASS">
+        <test-method signature="Batch()[pri:4, instance:Automation.MCQAPP@5276d6ee]" started-at="2024-08-21T00:54:30 BDT" name="Batch" finished-at="2024-08-21T00:55:10 BDT" duration-ms="39980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Batch -->
-        <test-method signature="Entry()[pri:5, instance:Automation.MCQAPP@5c7bfdc1]" started-at="2024-08-20T16:02:04 BDT" name="Entry" finished-at="2024-08-20T16:02:41 BDT" duration-ms="37474" status="PASS">
+        <test-method signature="Entry()[pri:5, instance:Automation.MCQAPP@5276d6ee]" started-at="2024-08-21T00:55:10 BDT" name="Entry" finished-at="2024-08-21T00:55:47 BDT" duration-ms="37491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Entry -->
-        <test-method signature="AssignRevision()[pri:6, instance:Automation.MCQAPP@5c7bfdc1]" started-at="2024-08-20T16:02:41 BDT" name="AssignRevision" finished-at="2024-08-20T16:03:00 BDT" duration-ms="18592" status="PASS">
+        <test-method signature="AssignRevision()[pri:6, instance:Automation.MCQAPP@5276d6ee]" started-at="2024-08-21T00:55:47 BDT" name="AssignRevision" finished-at="2024-08-21T00:56:06 BDT" duration-ms="18624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AssignRevision -->
-        <test-method signature="Review()[pri:7, instance:Automation.MCQAPP@5c7bfdc1]" started-at="2024-08-20T16:03:00 BDT" name="Review" finished-at="2024-08-20T16:03:29 BDT" duration-ms="28774" status="PASS">
+        <test-method signature="Review()[pri:7, instance:Automation.MCQAPP@5276d6ee]" started-at="2024-08-21T00:56:06 BDT" name="Review" finished-at="2024-08-21T00:56:35 BDT" duration-ms="28763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Review -->
-        <test-method is-config="true" signature="closeTest()[pri:0, instance:Automation.MCQAPP@5c7bfdc1]" started-at="2024-08-20T16:03:29 BDT" name="closeTest" finished-at="2024-08-20T16:03:29 BDT" duration-ms="102" status="PASS">
+        <test-method signature="ApproveBatch()[pri:8, instance:Automation.MCQAPP@5276d6ee]" started-at="2024-08-21T00:56:35 BDT" name="ApproveBatch" finished-at="2024-08-21T00:56:45 BDT" duration-ms="10312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApproveBatch -->
+        <test-method is-config="true" signature="closeTest()[pri:0, instance:Automation.MCQAPP@5276d6ee]" started-at="2024-08-21T00:56:45 BDT" name="closeTest" finished-at="2024-08-21T00:56:45 BDT" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTest -->

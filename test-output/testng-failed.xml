@@ -5,11 +5,9 @@
     <classes>
       <class name="Automation.MCQAPP">
         <methods>
-          <include name="Review"/>
-          <include name="closeTest"/>
+          <include name="ApproveBatch"/>
           <include name="setUp"/>
-          <include name="Entry"/>
-          <include name="AssignRevision"/>
+          <include name="closeTest"/>
         </methods>
       </class> <!-- Automation.MCQAPP -->
     </classes>

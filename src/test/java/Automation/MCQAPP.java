@@ -785,8 +785,49 @@ public class MCQAPP {
 					
 				}
 				
-								
+			@Test(priority=8)	
+			public void ApproveBatch() {
+				//Go to revision page
+				driver.findElement(By.xpath("//a[normalize-space()='Revision']")).click();
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }
 				
+				//Click Approve Batch
+				driver.findElement(By.xpath("(//button[normalize-space()='Approve Batch'])[1]")).click();
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }
+				
+				//Select Approve Batch
+				driver.findElement(By.xpath("(//div[@id='batch'])[1]")).click();
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }
+				
+				//Confirmed Approve Batch
+				driver.findElement(By.xpath("(//li[@role='option'])[1]")).click();
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }
+				
+				//Click Submit Button
+				driver.findElement(By.xpath("(//button[normalize-space()='Submit'])[1]")).click();
+				try {
+		            Thread.sleep(2000);  // 2000 milliseconds = 2 seconds
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }
+			}
+
 				
     @AfterTest
     public void closeTest()
